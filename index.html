@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title >Timer</title>
+    <link rel="stylesheet" href="./task.css">
+</head>
+
+<body>
+    <nav>
+        <div class="innernav">
+            <ul type="none">
+                <li class="active" id="showtimer">Timer</li>
+                <li id="tabeldetails">Details</li>
+                <li id="delete">Delete datas</li>
+            </ul>
+        </div>
+    </nav>
+    <div class="outer" id="outer">
+        <div class="inner">
+            <h1 class="heading">Timer</h1>
+        <div class="inputfield">
+            <div class="innerinput">
+    <input type="text" class="name" id="name" placeholder="Task Name"><br>
+    <input type="text" class="description" id="description" placeholder="Task Description"></div></div>
+    <div class="timer">
+       <div class="hr" ><p  id="hour">00</p></div>
+        <p class="time">:</p>
+       <div class="min" ><p id="minutes">00</p> </div>
+        <p class="time">:</p>
+        <div class="sec"><p  id="seconds">00</p></div>
+    </div>
+    <div class="buttons">
+    <button class="timer-control" id="timer-control">Start</button>
+    <button class="timer-pause" id="pausebutton" style="background: red;">Pause</button>
+    <button class="timer-pause" id="resumebutton" style="background: green;">Resume</button>
+    </div>
+    </div>
+    </div>
+    <div class="outerlabel" id="entries">
+    <div class="tabelinner" >
+<div class="entries" >
+    <table id="entriesTable">
+        <thead>
+            <tr>
+                <th>Task</th>
+                <th>Description</th>
+                <th>Duration</th>
+            </tr>
+        </thead>
+        <tbody id="entriesBody">
+            
+        </tbody>
+    </table>
+</div>
+</div>
+</div>
+<script  src="./task.js"></script>
+   
+</body>
+
+
+
+</html>
